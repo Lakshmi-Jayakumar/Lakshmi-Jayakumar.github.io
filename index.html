@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Student</title>
+    <link rel="stylesheet" href="./css/student_registration.css">
+  
+</head>
+<body>
+    <div id="loader"></div>
+    <div class="parent" id="parent">
+        <div class="login_form" id="login_form">
+            <h3>Contact form</h3>
+            <form id="login_form2" method="POST" name="form1" >
+                
+                <select name="name_with_initials" id="initials" style="position:initial; border:2px solid blueviolet;padding:9px;">
+                    <option selected="selected" value=""></option>
+                    <option value="Mr">Mr.</option>
+                    <option value="Mrs">Mrs.</option>
+                    <option value="Ms">Ms.</option>
+                </select>
+                
+                <input type="text" id="name" placeholder="Enter Name" name="yourname" style="width: 130px;"><br><br>
+                
+                <select name="sex" id="gender" style="position: absolute;top: 145px ;right: 90px;  border:2px solid blueviolet;padding:9px;padding-right:139px;">
+                    <option selected="selected" value="">Sex</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Others">Others</option>
+                </select><br>
+            
+                <input type="email" id="email" placeholder="Enter Email"><br>
+                <input type="password" placeholder="Enter Password" id="pwd"><br>
+                <input type="tel" id="mobile" placeholder="Enter Mobile"><br>
+                <input type="text" id="address1" placeholder="Address Line 1"><br>
+                <input type="text" id="address2" placeholder="Address Line 2"><br>
+                <input type="text" id="zipcode" placeholder="Enter Zipcode"><br>
+                <input type="button" value="Submit" id="gotoLogin">
+
+               
+            </form>
+             <p> <span id="jumpToRegister"></span></p>
+            
+            <p id="login_status"></p>
+        </div> 
+        <div class="registration_form" id="registration_form">
+            <h3>contact_form</h3><br><br>
+                       
+            <p id="insert_name"></p><br><br>
+            <p id="insert_gender"></p>   <br><br>
+            <p id="insert_email"></p>  <br><br>
+            <p id="insert_password"></p>    <br><br>
+            <p id="insert_mobile"></p>    <br><br>
+            <p id="insert_address1"></p>   <br><br>
+            <p id="insert_address2"></p>   <br><br>
+            <p id="insert_zipcode"></p>   <br><br>
+                                
+          
+            <p id="reg_status"></p>
+        </div>  
+    </div>
+
+    
+
+    <script src="./js/student_registration.js"></script>
+</body>
+</html>
